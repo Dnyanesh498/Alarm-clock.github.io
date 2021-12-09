@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Alarm clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/02d2ed6325.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="clock-container">
+        <div id="currentTime">
+            <!-- Digital clock face -->
+            <div class="digitalClock"></div>
+
+
+        </div>
+
+        <!-- alarm setting section -->
+        <div id="setAlarmContainer">
+            <div id="alarmTime">
+
+                <div class="alarmElements">
+                    <div id="hour">
+                        <select id="alarmHours"></select>
+                    </div>
+                    <div id="minutes">
+                        <select id="alarmMinutes"></select>
+                    </div>
+                    <div id="seconds">
+                        <select id="alarmSeconds"></select>
+                    </div>
+                    <div class="zone">
+                        <select id="zone">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                    </div>
+                </div>
+
+                <button id="setAlarmBtn" onclick="setAlarm()">SET ALARM</button>
+                <button id="stopAlarmBtn" onclick="stopAlarm()">STOP ALARM</button>
+            </div>
+            <h2 style="letter-spacing: 2px; color: rgb(24, 27, 18); margin-top: 10px;">Alarm List</h2>
+            <div id="alarmList">
+
+                <!-- <span> 12:00:00 am </span> &nbsp &nbsp <a class = "delete"><i class="far fa-trash-alt"></i></a> -->
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
