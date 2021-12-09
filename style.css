@@ -1,28 +1,29 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #clock-container {
-    max-height: 780px;
+    height: 780px;
     width: 480px;
+    margin: auto;
     margin-top: 20px;
-    background-color: rgb(241, 56, 10);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: orange;
+    font-family: 'Times New Roman', Times, serif;
     padding: 10px 15px;
     border-radius: 20px;
-    border: 10px solid rgb(216, 135, 15);
+    border: 10px solid rgb(248, 164, 6);
     box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 0 4px rgba(255, 255, 255, 1);
-    margin-left: 10%;
 }
 
 #currentTime {
+    height: auto;
     min-height: 230px;
     width: 95%;
     margin-top: 2%;
-    font-size: 3.5rem;
-    background-color: gray;
+    font-size: 4.5rem;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +31,7 @@
     /* box-shadow: 0px 0px 4px 5px rgb(147, 214, 69); */
     border-radius: 10px;
     /* position: relative; */
-    border: 10px solid grey;
+    border: 10px solid #fff;
     box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 0 4px rgba(255, 255, 255, 1);
 }
 
@@ -51,16 +52,16 @@
     font-size: 16px;
     padding: 2px 5px;
     text-align: center;
-    background-color: rgb(245, 86, 12);
+    background-color: rgb(123, 203, 218);
 }
 
 #setAlarmContainer {
     height: 70%;
+    width: inherit;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: column;
-    width: inherit;
     /* background-color: rgb(177, 164, 51); */
 }
 
@@ -72,10 +73,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(34, 113, 119);
+    background-color: rgb(146, 165, 216);
     /* padding: 5px 10px; */
     border-radius: 10px;
-    border: 5px solid rgb(33, 130, 143);
+    border: 5px solid rgb(146, 165, 216);
     margin-top: 10px;
     box-shadow: inset 0 0 30px rgba(116, 97, 97, 0.1), 0 20px 20px rgba(87, 75, 75, 0.2), 0 0 0 4px rgba(146, 165, 216, 1);
 }
@@ -100,8 +101,7 @@
     border-radius: 10px;
 }
 
-#setAlarmBtn,
-#stopAlarmBtn {
+#setAlarmBtn {
     text-align: center;
     font-size: 18px;
     padding: 2px 5px;
@@ -119,9 +119,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: cyan;
+    background-color: lightcyan;
     border-radius: 10px;
-    border: 10px solid rgb(20, 83, 83);
+    border: 10px solid lightcyan;
     box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 0 4px rgba(255, 255, 255, 1);
 }
 
