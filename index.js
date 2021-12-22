@@ -30,12 +30,12 @@ var time = setInterval(function() {
     clock.innerHTML = time;
 });
 
-// this funcion adding zero infront of time when time less than 10
+// added zerofor numbers less than 10 
 function addZero(time) {
     return (time < 10) ? "0" + time : time;
 }
 
-// function for hours list which ease the setting of alarm for user
+// setting up hour for alarm
 function hoursList() {
     var select = document.getElementById('alarm_Hours');
     var hrs = 12;
@@ -45,7 +45,7 @@ function hoursList() {
 }
 hoursList();
 
-// function for minute list which ease the setting of alarm for user
+// setting up minute for alarm
 function minuteList() {
     var select = document.getElementById('alarm_Minutes');
     var mnts = 59;
@@ -55,7 +55,7 @@ function minuteList() {
 }
 minuteList();
 
-// function for second list which ease the setting of alarm for user
+// setting up sec for alarm
 function secondList() {
     var select = document.getElementById('alarm_Seconds');
     var scnd = 59;
@@ -124,9 +124,6 @@ function setAlarm() {
 
     });
 }
-
-
-
 // function for addding element into a alarm list
 function addAlarmToList(alarm_Time) {
     let parent = document.createElement("div");
@@ -195,54 +192,16 @@ function editStorage(alarm) {
     localStorage.setItem('alarms', JSON.stringify(alarms_list));
     // it will restore remaining items in local storage
 }
-
-// for analogue clock
-
-const deg = 6;
-const aHr = document.querySelector('#aHr');
-const aMin = document.querySelector('#aMin');
-const aSec = document.querySelector('#aSec');
-
-setInterval(() => {
-    let time = new Date();
-    let hh = time.getHours() * 30;
-    let mm = time.getMinutes() * deg;
-    let ss = time.getSeconds() * deg;
-
-    aHr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
-    aMin.style.transform = `rotateZ(${mm}deg)`;
-    aSec.style.transform = `rotateZ(${ss}deg)`;
-})
-
-// logic for switching from digital to analogue
-
-var analogue = document.querySelector('#analogueButton');
-var digital = document.querySelector('#digitalButton');
-var analogueClock = document.querySelector('.analogue-clock');
-digital.disabled = true;
-//initially our clock having digital face so diasabling digital button
-
-analogue.addEventListener('click', () => {
-    let clock = document.querySelector('.digital_Clock');
-    let time = document.querySelector('#time');
-    time.style.background = "transparent";
-    analogueClock.style.display = "flex";
-    clock.style.display = "none";
-    analogue.disabled = true;
-    digital.disabled = false;
-})
-
 digital.addEventListener('click', () => {
-    let clock = document.querySelector('.digital_Clock');
-    let time = document.querySelector('#time');
-    time.style.background = "ivory";
-    analogueClock.style.display = "none";
-    clock.style.display = "block";
-    analogue.disabled = false;
-    digital.disabled = true;
-})
-
-// logic for stop alarm when clicked on stop alarm button
+        let clock = document.querySelector('.digital_Clock');
+        let time = document.querySelector('#time');
+        time.style.background = "ivory";
+        analogueClock.style.display = "none";
+        clock.style.display = "block";
+        analogue.disabled = false;
+        digital.disabled = true;
+    })
+    // logic for stop alarm when clicked on stop alarm button
 var stopAlarmButton = document.querySelector('#stopAlarmButton');
 sstopAlarmButton.style.display = "none";
 
