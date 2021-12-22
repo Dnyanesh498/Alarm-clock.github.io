@@ -4,7 +4,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-#clock-container {
+#alarm-container {
     height: 780px;
     width: 480px;
     margin: auto;
@@ -17,7 +17,7 @@
     box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 0 4px rgba(255, 255, 255, 1);
 }
 
-#currentTime {
+#time {
     height: auto;
     min-height: 230px;
     width: 95%;
@@ -55,7 +55,7 @@
     background-color: rgb(123, 203, 218);
 }
 
-#setAlarmContainer {
+#set_Container {
     height: 70%;
     width: inherit;
     display: flex;
@@ -65,7 +65,7 @@
     /* background-color: rgb(177, 164, 51); */
 }
 
-#alarmTime {
+#alarm_Time {
     height: 40%;
     min-height: 100px;
     width: inherit;
@@ -81,7 +81,7 @@
     box-shadow: inset 0 0 30px rgba(116, 97, 97, 0.1), 0 20px 20px rgba(87, 75, 75, 0.2), 0 0 0 4px rgba(146, 165, 216, 1);
 }
 
-.alarmElements {
+.alarmZone {
     height: 70%;
     width: inherit;
     display: flex;
@@ -89,19 +89,27 @@
     align-items: center;
 }
 
-.alarmElements>div {
+.alarmZone>div {
     height: 40%;
     width: 20%;
 }
 
-.alarmElements>div select {
+.alarmZone>div select {
     height: 100%;
     width: 100%;
     font-size: 22px;
     border-radius: 10px;
 }
 
-#setAlarmBtn {
+#alarmButton {
+    text-align: center;
+    font-size: 18px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#stopAlarmButton {
     text-align: center;
     font-size: 18px;
     padding: 2px 5px;
