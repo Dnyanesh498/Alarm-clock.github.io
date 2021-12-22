@@ -192,16 +192,8 @@ function editStorage(alarm) {
     localStorage.setItem('alarms', JSON.stringify(alarms_list));
     // it will restore remaining items in local storage
 }
-digital.addEventListener('click', () => {
-        let clock = document.querySelector('.digital_Clock');
-        let time = document.querySelector('#time');
-        time.style.background = "ivory";
-        analogueClock.style.display = "none";
-        clock.style.display = "block";
-        analogue.disabled = false;
-        digital.disabled = true;
-    })
-    // logic for stop alarm when clicked on stop alarm button
+
+// logic for stop alarm when clicked on stop alarm button
 var stopAlarmButton = document.querySelector('#stopAlarmButton');
 sstopAlarmButton.style.display = "none";
 
