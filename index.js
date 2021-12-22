@@ -135,8 +135,8 @@ function addAlarmToList(alarm_Time) {
     // adding class to created div
     parent.innerHTML = `<span> ${alarm_Time} </span> &nbsp &nbsp <a class = "delete"><i class="far fa-trash-alt"></i></a>`;
 
-    var alarmList = document.getElementById("alarmList");
-    alarmList.appendChild(parent);
+    var alarm_List = document.getElementById("alarm_List");
+    alarm_List.appendChild(parent);
 }
 
 // storing alarms to local storage
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", displayStorage);
 
 // when we click on delete icon delete alarm function will be called and it will
 // delete alarm from list and from local storage also
-alarmList.addEventListener("click", deleteAlarm);
+alarm_List.addEventListener("click", deleteAlarm);
 
 function deleteAlarm(event) {
     event.preventDefault();
@@ -177,7 +177,7 @@ function deleteAlarm(event) {
         // it will fetch alarm wich we intent to delete
         let listAlarm = event.target.parentElement.parentElement;
         // it will fetch alarm on we clicked for delete
-        alarmList.removeChild(listAlarm);
+        alarm_List.removeChild(listAlarm);
 
         // delete alarm from storage also
         editStorage(alarm);
