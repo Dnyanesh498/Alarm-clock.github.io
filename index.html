@@ -12,38 +12,38 @@
 </head>
 
 <body>
-    <div id="clock-container">
-        <div id="currentTime">
+    <div id="alarm-container">
+        <div id="time">
             <!-- Digital clock face -->
-            <div class="digitalClock"></div>
+            <div class="digital_Clock"></div>
 
 
         </div>
 
         <!-- alarm setting section -->
-        <div id="setAlarmContainer">
-            <div id="alarmTime">
+        <div id="set_Container">
+            <div id="alarm_Time">
 
-                <div class="alarmElements">
+                <div class="alarmZone">
                     <div id="hour">
-                        <select id="alarmHours"></select>
+                        <select id="alarm_Hours"></select>
                     </div>
                     <div id="minutes">
-                        <select id="alarmMinutes"></select>
+                        <select id="alarm_Minutes"></select>
                     </div>
                     <div id="seconds">
-                        <select id="alarmSeconds"></select>
+                        <select id="alarm_Seconds"></select>
                     </div>
-                    <div class="ampm">
-                        <select id="ampm">
+                    <div class="zone">
+                        <select id="zone">
                         <option value="AM">AM</option>
                         <option value="PM">PM</option>
                     </select>
                     </div>
                 </div>
 
-                <button id="setAlarmBtn" onclick="setAlarm()">SET ALARM</button>
-                <button id="stopAlarmBtn" onclick="stopAlarm()">STOP ALARM</button>
+                <button id="alarmButton" onclick="setAlarm()">SET ALARM</button>
+                <button id="stopAlarmButton" onclick="stopAlarm()">STOP ALARM</button>
             </div>
             <h2 style="letter-spacing: 2px; color: rgb(24, 27, 18); margin-top: 10px;">Alarm List</h2>
             <div id="alarmList">
